@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Tatay!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff; }
+            to { text-shadow: 0 0 25px yellow; }
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: gold;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: orange;
+            transform: scale(1.1);
+        }
+
+        #surprise {
+            margin-top: 30px;
+            font-size: 22px;
+            display: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎉 Happy Birthday Tatay! 🎂</h1>
+
+        <p>
+            HAPPY BIRTHDAY TATAY BUKAS MO TO PARA MASURPRISE KA! 💙
+        </p>
+
+        <button onclick="showMessage()">Click for Surprise 🎁</button>
+
+        <div id="surprise">
+            🎊 We love you Tatay! 🎊 <br>
+            You are our hero and inspiration and HAPPY BIRTHDAY!! 💪💙
+        </div>
+    </div>
+
+    <footer>
+        Made with ❤️ by Your Anak
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
